@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation - Talha Rasheed</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Cormorant+Garamond:wght@300;400;600&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container" id="welcomePage">
+        <div class="welcome-section">
+            <div class="decorative-element top"></div>
+            
+            <div class="header-content">
+                <h1 class="main-title">بسم اللہ الرحمن الرحیم</h1>
+                <div class="divider"></div>
+                <h2 class="welcome-text">Welcome</h2>
+                <p class="family-text">From Abdul Rasheed and Family</p>
+                <div class="invitation-line"></div>
+                <p class="description">آپ کو ہماری بیٹی<br><strong class="groom-name">Talha Rasheed</strong><br>کی شادی کی تقریب میں خوش آمدید</p>
+            </div>
+
+            <div class="search-container">
+                <label for="guestSearch" class="search-label">اپنا نام تلاش کریں</label>
+                <div class="search-box">
+                    <input 
+                        type="text" 
+                        id="guestSearch" 
+                        placeholder="مثال: Haji Khalid"
+                        autocomplete="off"
+                    >
+                    <div id="suggestions" class="suggestions-dropdown"></div>
+                </div>
+                <button id="searchBtn" class="search-btn">Search</button>
+            </div>
+
+            <div class="decorative-element bottom"></div>
+        </div>
+    </div>
+
+    <div class="container hidden" id="invitationPage">
+        <div class="invitation-section">
+            <button class="back-btn" id="backBtn">← واپس جائیں</button>
+            
+            <div class="guest-header">
+                <h2 class="guest-welcome">خوش آمدید</h2>
+                <h3 class="guest-name" id="guestName"></h3>
+            </div>
+
+            <div class="events-container" id="eventsContainer">
+                <!-- Event cards will be dynamically inserted here -->
+            </div>
+
+            <div class="footer-message">
+                <p>ہم آپ کی موجودگی سے بہت خوش ہوں گے</p>
+                <p class="signature">Abdul Rasheed & Family</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Event Card Templates -->
+    <template id="mehndiTemplate">
+        <div class="event-card mehndi-card">
+            <div class="event-header">
+                <div class="event-icon">🌸</div>
+                <h3 class="event-title">مہندی کی تقریب</h3>
+                <p class="event-title-en">Mehndi Ceremony</p>
+            </div>
+            <div class="event-details">
+                <div class="detail-item">
+                    <span class="detail-icon">📅</span>
+                    <span class="detail-text">15 January 2026</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-icon">🕐</span>
+                    <span class="detail-text">7:00 PM onwards</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-icon">📍</span>
+                    <span class="detail-text">Community Hall, Main Road</span>
+                </div>
+            </div>
+            <div class="event-message">
+                <p>آپ کی موجودگی ہمارے لیے باعث مسرت ہوگی</p>
+            </div>
+        </div>
+    </template>
+
+    <template id="baratTemplate">
+        <div class="event-card barat-card">
+            <div class="event-header">
+                <div class="event-icon">💍</div>
+                <h3 class="event-title">بارات کی تقریب</h3>
+                <p class="event-title-en">Barat Ceremony</p>
+            </div>
+            <div class="event-details">
+                <div class="detail-item">
+                    <span class="detail-icon">📅</span>
+                    <span class="detail-text">16 January 2026</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-icon">🕐</span>
+                    <span class="detail-text">8:00 PM onwards</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-icon">📍</span>
+                    <span class="detail-text">Grand Marquee, City Center</span>
+                </div>
+            </div>
+            <div class="event-message">
+                <p>آپ کی موجودگی ہمارے لیے باعث مسرت ہوگی</p>
+            </div>
+        </div>
+    </template>
+
+    <template id="walimaTemplate">
+        <div class="event-card walima-card">
+            <div class="event-header">
+                <div class="event-icon">🌟</div>
+                <h3 class="event-title">ولیمہ کی تقریب</h3>
+                <p class="event-title-en">Walima Ceremony</p>
+            </div>
+            <div class="event-details">
+                <div class="detail-item">
+                    <span class="detail-icon">📅</span>
+                    <span class="detail-text">17 January 2026</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-icon">🕐</span>
+                    <span class="detail-text">1:00 PM onwards</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-icon">📍</span>
+                    <span class="detail-text">Hotel Pearl Continental</span>
+                </div>
+            </div>
+            <div class="event-message">
+                <p>آپ کی موجودگی ہمارے لیے باعث مسرت ہوگی</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>

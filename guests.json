@@ -1,0 +1,44 @@
+{
+  "guests": [
+    {
+      "name": "Haji Khalid",
+      "events": ["mehndi", "barat", "walima"]
+    },
+    {
+      "name": "Haji Aslam",
+      "events": ["barat", "walima"]
+    },
+    {
+      "name": "Haji Muhammad",
+      "events": ["mehndi", "barat", "walima"]
+    },
+    {
+      "name": "Sheikh Ahmed",
+      "events": ["barat"]
+    },
+    {
+      "name": "Maulana Tariq",
+      "events": ["mehndi", "barat", "walima"]
+    },
+    {
+      "name": "Dr. Farhan",
+      "events": ["walima"]
+    },
+    {
+      "name": "Engr. Kashif",
+      "events": ["barat", "walima"]
+    },
+    {
+      "name": "Malik Imran",
+      "events": ["mehndi", "barat"]
+    },
+    {
+      "name": "Haji Abdullah",
+      "events": ["mehndi", "barat", "walima"]
+    },
+    {
+      "name": "Prof. Rashid",
+      "events": ["barat", "walima"]
+    }
+  ]
+}
