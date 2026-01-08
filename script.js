@@ -48,7 +48,10 @@ function displaySuggestions(matches) {
         return;
     }
 
-    matches.forEach(guest => {
+    // Limit to 10 suggestions to prevent long lists
+    const limitedMatches = matches.slice(0, 10);
+
+    limitedMatches.forEach(guest => {
         const item = document.createElement('div');
         item.className = 'suggestion-item';
         item.textContent = guest.name;
@@ -116,6 +119,25 @@ function addEventCard(eventType) {
     }
 
     const clone = template.content.cloneNode(true);
+    
+    // Add persons invited info if available
+    const eventIndex = currentGuest.events.indexOf(eventType);
+    if (currentGuest.persons && currentGuest.persons[eventIndex] !== undefined &&
+        currentGuest.desc && currentGuest.desc[eventIndex] !== undefined) {
+        const persons = currentGuest.persons[eventIndex];
+        const desc = currentGuest.desc[eventIndex];
+        
+        const eventDetails = clone.querySelector('.event-details');
+        const personsItem = document.createElement('div');
+        personsItem.className = 'detail-item';
+        personsItem.innerHTML = `
+            <span class="detail-icon">👥</span>
+            <span class="detail-text">${persons} persons (${desc})</span>
+        `;
+        eventDetails.appendChild(personsItem);
+        
+    }
+    
     eventsContainer.appendChild(clone);
 }
 
