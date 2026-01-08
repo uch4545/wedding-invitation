@@ -1,44 +1,45 @@
 {
   "guests": [
-    {
-      "name": "Haji Khalid",
-      "events": ["mehndi", "barat", "walima"]
-    },
-    {
-      "name": "Haji Aslam",
-      "events": ["barat", "walima"]
-    },
-    {
-      "name": "Haji Muhammad",
-      "events": ["mehndi", "barat", "walima"]
-    },
-    {
-      "name": "Sheikh Ahmed",
-      "events": ["barat"]
-    },
-    {
-      "name": "Maulana Tariq",
-      "events": ["mehndi", "barat", "walima"]
-    },
-    {
-      "name": "Dr. Farhan",
-      "events": ["walima"]
-    },
-    {
-      "name": "Engr. Kashif",
-      "events": ["barat", "walima"]
-    },
-    {
-      "name": "Malik Imran",
-      "events": ["mehndi", "barat"]
-    },
-    {
-      "name": "Haji Abdullah",
-      "events": ["mehndi", "barat", "walima"]
-    },
-    {
-      "name": "Prof. Rashid",
-      "events": ["barat", "walima"]
-    }
+    { "name": "Chacho Haji", "events": ["mehndi","barat","walima"], "persons": [7,7,7], "desc": [] },
+    { "name": "Chacho Arshad", "events": ["mehndi","barat","walima"], "persons": [6,6,6], "desc": [] },
+    { "name": "Chacho Hafeez", "events": ["mehndi","barat","walima"], "persons": [8,5,8], "desc": [] },
+    { "name": "Baji Rahila", "events": ["mehndi","barat","walima"], "persons": [4,4,4], "desc": [] },
+    { "name": "Baji Jamila", "events": ["mehndi","barat","walima"], "persons": [5,5,5], "desc": [] },
+    { "name": "Baji Naila", "events": ["mehndi","barat","walima"], "persons": [8,5,8], "desc": [] },
+    { "name": "Baji navila", "events": ["mehndi","barat","walima"], "persons": [5,2,5], "desc": [] },
+    { "name": "Phopho Salma", "events": ["mehndi","barat","walima"], "persons": [6,6,6], "desc": [] },
+    { "name": "Phopho Nasreen", "events": ["mehndi","barat","walima"], "persons": [8,4,8], "desc": [] },
+    { "name": "Phopho Shameem", "events": ["mehndi","barat","walima"], "persons": [5,3,5], "desc": [] },
+    { "name": "Mamo phando", "events": ["mehndi","barat","walima"], "persons": [2,2,2], "desc": [] },
+    { "name": "Khala Salma", "events": ["mehndi","barat","walima"], "persons": [5,1,5], "desc": [] },
+    { "name": "Khala Aysha", "events": ["mehndi","barat","walima"], "persons": [3,3,3], "desc": [] },
+    { "name": "Nani Ama", "events": ["mehndi","barat","walima"], "persons": [3,3,3], "desc": [] },
+    { "name": "Mamo Shani", "events": ["mehndi","barat","walima"], "persons": [2,2,2], "desc": [] },
+    { "name": "Mamo Rajo", "events": ["mehndi","barat","walima"], "persons": [2,2,2], "desc": [] },
+    { "name": "Mamo Ashu", "events": ["mehndi","barat","walima"], "persons": [5,5,5], "desc": [] },
+    { "name": "Sajjad Sattar", "events": ["mehndi","barat","walima"], "persons": [5,2,5], "desc": [] },
+    { "name": "Chacho Asim", "events": ["mehndi","barat","walima"], "persons": [8,2,8], "desc": [] },
+    { "name": "Mamo manir 25", "events": ["mehndi","barat","walima"], "persons": [5,1,5], "desc": [] },
+    { "name": "Mamo Nazir 25", "events": ["mehndi","barat","walima"], "persons": [5,1,5], "desc": [] },
+    { "name": "Rabi Niaz", "events": ["mehndi","barat","walima"], "persons": [2,1,2], "desc": [] },
+    { "name": "Tayyaba Niaz", "events": ["mehndi","barat","walima"], "persons": [2,1,2], "desc": [] },
+    { "name": "Aysha Niaz", "events": ["mehndi","barat","walima"], "persons": [2,1,2], "desc": [] },
+    { "name": "Mamona Niaz", "events": ["mehndi","barat","walima"], "persons": [2,1,2], "desc": [] },
+    { "name": "Mamo Riaz", "events": ["mehndi","walima"], "persons": [2,2], "desc": [] },
+    { "name": "Chacha Jaji 45", "events": ["mehndi","barat","walima"], "persons": [1,1,1], "desc": [] },
+    { "name": "Chacho Malik 45", "events": ["mehndi","barat","walima"], "persons": [2,2,2], "desc": [] },
+    { "name": "Mama Abdullah 45", "events": ["mehndi","barat","walima"], "persons": [2,2,2], "desc": [] },
+    { "name": "Ali 45", "events": ["walima"], "persons": [1], "desc": [] },
+    { "name": "Naseer Ul deen 45", "events": ["mehndi","walima"], "persons": [1,1], "desc": [] },
+    { "name": "Asif Yaqoob 45", "events": ["mehndi","barat","walima"], "persons": [3,1,3], "desc": [] },
+    { "name": "Baji Samina 45", "events": ["walima"], "persons": [2], "desc": [] },
+    { "name": "Shreef Mistry 45", "events": ["walima"], "persons": [1], "desc": [] },
+    { "name": "Mamo Hakeem 25", "events": ["walima"], "persons": [1], "desc": [] },
+    { "name": "Chacho Riaz 45", "events": ["walima"], "persons": [1], "desc": [] },
+    { "name": "Chacho Mushtaq/Toti 45", "events": ["walima"], "persons": [1], "desc": [] },
+    { "name": "Chacho Fiaz 45", "events": ["walima"], "persons": [1], "desc": [] },
+    { "name": "Talha Friends", "events": ["barat","walima"], "persons": [5,20], "desc": [] },
+    { "name": "Usama Friends", "events": ["walima"], "persons": [5], "desc": [] },
+    { "name": "Walima Girl Side Guest", "events": ["walima"], "persons": [50], "desc": [] }
   ]
 }
