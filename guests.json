@@ -1,10 +1,6 @@
 {
   "guests": [
-    { "name": "Chacho Haji", "events": ["mehndi","barat","walima"], "persons": [7,7,7], "desc": [] },
-    { "name": "Chacho Arshad", "events": ["mehndi","barat","walima"], "persons": [6,6,6], "desc": [] },
-    { "name": "Chacho Hafeez", "events": ["mehndi","barat","walima"], "persons": [8,5,8], "desc": [] },
-    { "name": "Baji Rahila", "events": ["mehndi","barat","walima"], "persons": [4,4,4], "desc": [] },
-    { "name": "Baji Jamila", "events": ["mehndi","barat","walima"], "persons": [5,5,5], "desc": [] },
+    { "name": "Fasial Jawed", "events": ["mehndi","barat","walima"], "persons": [6,6,6], "desc": [] },
     { "name": "Baji Naila", "events": ["mehndi","barat","walima"], "persons": [8,5,8], "desc": [] },
     { "name": "Baji navila", "events": ["mehndi","barat","walima"], "persons": [5,2,5], "desc": [] },
     { "name": "Phopho Salma", "events": ["mehndi","barat","walima"], "persons": [6,6,6], "desc": [] },
@@ -43,3 +39,4 @@
     { "name": "Walima Girl Side Guest", "events": ["walima"], "persons": [50], "desc": [] }
   ]
 }
+
