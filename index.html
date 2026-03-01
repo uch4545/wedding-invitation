@@ -3,32 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding Invitation - Talha Rasheed</title>
+    <title>Wedding Invitation — Talha Rasheed</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Cormorant+Garamond:wght@300;400;600&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:wght@300;400;600&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Floating petals -->
+    <div class="petals-wrapper">
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+    </div>
+
+    <!-- ==================== WELCOME PAGE ==================== -->
     <div class="container" id="welcomePage">
         <div class="welcome-section">
-            <div class="decorative-element top"></div>
-            
+
+            <!-- Corner decorations -->
+            <div class="corner-decor tl"></div>
+            <div class="corner-decor tr"></div>
+            <div class="corner-decor bl"></div>
+            <div class="corner-decor br"></div>
+
             <div class="header-content">
                 <h1 class="main-title">بسم اللہ الرحمن الرحیم</h1>
-                <div class="divider"></div>
+
+                <!-- Ornament divider -->
+                <div class="ornament">
+                    <div class="ornament-line"></div>
+                    <div class="ornament-diamond"></div>
+                    <div class="ornament-line"></div>
+                </div>
+
                 <h2 class="welcome-text">Welcome</h2>
-                <p class="family-text">Mr. & Mrs Abdul Rasheed</p>
-                <div class="invitation-line"></div>
-                <p class="description">ہم دل کی گہرائیوں سے اپنے پیارے بیٹے<br><strong class="groom-name">Talha Rasheed</strong><br>کی شادی میں خوش آمدید کہتے ہیں</p>
+                <p class="family-text">Mr. &amp; Mrs. Abdul Rasheed</p>
+
+                <div class="ornament" style="margin: 20px 0 16px;">
+                    <div class="ornament-line"></div>
+                    <div class="ornament-diamond"></div>
+                    <div class="ornament-line"></div>
+                </div>
+
+                <p class="description">
+                    ہم دل کی گہرائیوں سے اپنے پیارے بیٹے<br>
+                    <strong class="groom-name">Talha Rasheed</strong><br>
+                    کی شادی میں خوش آمدید کہتے ہیں
+                </p>
             </div>
 
             <div class="search-container">
                 <label for="guestSearch" class="search-label">اپنا نام تلاش کریں</label>
                 <div class="search-box">
-                    <input 
-                        type="text" 
-                        id="guestSearch" 
+                    <input
+                        type="text"
+                        id="guestSearch"
                         placeholder="مثال: Abdul Rasheed"
                         autocomplete="off"
                     >
@@ -37,31 +77,46 @@
                 <button id="searchBtn" class="search-btn">Search</button>
             </div>
 
-            <div class="decorative-element bottom"></div>
         </div>
     </div>
 
+    <!-- ==================== INVITATION PAGE ==================== -->
     <div class="container hidden" id="invitationPage">
         <div class="invitation-section">
+
+            <!-- Corner decorations -->
+            <div class="corner-decor tl"></div>
+            <div class="corner-decor tr"></div>
+            <div class="corner-decor bl"></div>
+            <div class="corner-decor br"></div>
+
             <button class="back-btn" id="backBtn">← واپس جائیں</button>
-            
+
             <div class="guest-header">
                 <h2 class="guest-welcome">خوش آمدید</h2>
                 <h3 class="guest-name" id="guestName"></h3>
             </div>
 
+            <div class="ornament" style="margin: 20px 0;">
+                <div class="ornament-line"></div>
+                <div class="ornament-diamond"></div>
+                <div class="ornament-line"></div>
+            </div>
+
             <div class="events-container" id="eventsContainer">
-                <!-- Event cards will be dynamically inserted here -->
+                <!-- Event cards inserted by JS -->
             </div>
 
             <div class="footer-message">
                 <p>ہم آپ کی موجودگی سے بہت خوش ہوں گے</p>
-                <p class="signature">Mr. & Mrs Abdul Rasheed</p>
+                <p class="signature">Mr. &amp; Mrs. Abdul Rasheed</p>
             </div>
+
         </div>
     </div>
 
-    <!-- Event Card Templates -->
+    <!-- ==================== EVENT TEMPLATES ==================== -->
+
     <template id="mehndiTemplate">
         <div class="event-card mehndi-card">
             <div class="event-header">
@@ -72,7 +127,7 @@
             <div class="event-details">
                 <div class="detail-item">
                     <span class="detail-icon">📅</span>
-                    <span class="detail-text">23 March 2026</span>
+                    <span class="detail-text">23 March 2026 — Sunday</span>
                 </div>
                 <div class="detail-item">
                     <span class="detail-icon">🕐</span>
@@ -80,7 +135,7 @@
                 </div>
                 <div class="detail-item">
                     <span class="detail-icon">📍</span>
-                    <span class="detail-text">Chak No 45/3R </span>
+                    <span class="detail-text">Chak No 45/3R</span>
                 </div>
             </div>
             <div class="event-message">
@@ -99,7 +154,7 @@
             <div class="event-details">
                 <div class="detail-item">
                     <span class="detail-icon">📅</span>
-                    <span class="detail-text">24 March 2026</span>
+                    <span class="detail-text">24 March 2026 — Monday</span>
                 </div>
                 <div class="detail-item">
                     <span class="detail-icon">🕐</span>
@@ -126,7 +181,7 @@
             <div class="event-details">
                 <div class="detail-item">
                     <span class="detail-icon">📅</span>
-                    <span class="detail-text">25 March 2026</span>
+                    <span class="detail-text">25 March 2026 — Tuesday</span>
                 </div>
                 <div class="detail-item">
                     <span class="detail-icon">🕐</span>
@@ -134,7 +189,7 @@
                 </div>
                 <div class="detail-item">
                     <span class="detail-icon">📍</span>
-                    <span class="detail-text">Punjab Marriage Hall ShaheedChok</span>
+                    <span class="detail-text">Punjab Marriage Hall, Shaheed Chok</span>
                 </div>
             </div>
             <div class="event-message">
@@ -146,6 +201,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
